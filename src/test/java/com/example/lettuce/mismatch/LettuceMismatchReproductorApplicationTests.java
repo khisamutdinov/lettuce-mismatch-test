@@ -146,8 +146,8 @@ class LettuceMismatchReproductorApplicationTests {
                 TimeUnit.MILLISECONDS.sleep(5);
             }
             System.in.read();
-            // Mismatches should occur
-            assertThat(mismatchCounter.get()).isGreaterThan(0);
+            // Mismatches occure and test fails
+            assertThat(mismatchCounter.get()).isEqualTo(0);
         }
     }
 
